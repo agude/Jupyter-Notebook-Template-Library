@@ -1,4 +1,4 @@
-name: Python package
+name: Test Notebooks
 
 on: [push, pull_request]
 
