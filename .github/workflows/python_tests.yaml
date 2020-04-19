@@ -22,7 +22,7 @@ jobs:
         python -m pip install --upgrade pip
     - name: Install packages
       run: |
-        python -m pip install --upgrade jupyter matplotlib numpy
+        python -m pip install --upgrade jupyter matplotlib numpy pandas
     - name: Run plotting notebook
       run: |
         jupyter nbconvert --to notebook --inplace --ExecutePreprocessor.timeout=600 --execute notebooks/basic-plotting-template.ipynb
