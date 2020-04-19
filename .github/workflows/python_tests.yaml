@@ -23,3 +23,6 @@ jobs:
     - name: Install packages
       run: |
         python -m pip install --upgrade jupyter matplotlib numpy
+    - name: Run plotting notebook
+      run: |
+        jupyter nbconvert --to notebook --inplace --ExecutePreprocessor.timeout=600 --execute notebooks/basic-plotting-template.ipynb
